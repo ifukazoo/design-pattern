@@ -9,4 +9,4 @@ compileJava {
   options.compilerArgs << "-Xlint:unchecked" << "-Xlint:deprecation"
 }
 
-mainClassName = "net.yamanoboriold.designpattern.strategy.Main"
+mainClassName = "net.yamanoboriold.designpattern.decorator.uppercaseinputstream.Main"
