@@ -1,0 +1,22 @@
+apply plugin: 'java'
+apply plugin: 'application'
+apply plugin: "jacoco"
+
+repositories {
+  mavenCentral()
+}
+compileJava {
+  options.encoding = 'UTF-8'
+  options.compilerArgs << "-Xlint:unchecked" << "-Xlint:deprecation"
+}
+
+dependencies {
+  testCompile group: 'junit', name: 'junit', version: '4.+'
+  testCompile 'org.assertj:assertj-core:3.6.1'
+}
+
+mainClassName = "net.yamanoboriold.designpattern.decorator.ramenshop.Main"
+
+jacoco {
+  applyTo run
+}
