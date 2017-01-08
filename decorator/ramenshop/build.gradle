@@ -1,5 +1,6 @@
 apply plugin: 'java'
 apply plugin: 'application'
+apply plugin: "checkstyle"
 apply plugin: "jacoco"
 
 repositories {
@@ -16,6 +17,11 @@ dependencies {
 }
 
 mainClassName = "net.yamanoboriold.designpattern.decorator.ramenshop.Main"
+
+checkstyle {
+  toolVersion '7.4'
+  configFile file(System.env['HOME'] + '/github/checkstyle/src/main/resources/sun_checks.xml')
+}
 
 jacoco {
   applyTo run
