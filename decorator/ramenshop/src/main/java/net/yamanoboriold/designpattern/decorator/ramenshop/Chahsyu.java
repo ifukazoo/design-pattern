@@ -3,7 +3,7 @@ package net.yamanoboriold.designpattern.decorator.ramenshop;
 public class Chahsyu extends Gu {
 
     private RamenNoZairyo zairyo;
-    private final int COST = 130;
+    private static final int COST = 130;
 
     public Chahsyu(RamenNoZairyo zairyo) {
         this.zairyo = zairyo;

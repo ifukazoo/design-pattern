@@ -7,25 +7,25 @@ public final class Main {
         RamenNoZairyo tonkotsuBase = new TonkotsuSoup();
         RamenNoZairyo misoBase = new MisoSoup();
 
-        tonkotsuBase = new Agitama(tonkotsuBase);
+        tonkotsuBase = new Aghitama(tonkotsuBase);
         System.out.print(
-                String.format("%s %d円\n", tonkotsuBase.getDescription(), tonkotsuBase.cost()));
+                String.format("ラーメン %s %d円\n", tonkotsuBase.getDescription(), tonkotsuBase.cost()));
 
         tonkotsuBase = new Nori(tonkotsuBase);
         System.out.print(
-                String.format("%s %d円\n", tonkotsuBase.getDescription(), tonkotsuBase.cost()));
+                String.format("ラーメン %s %d円\n", tonkotsuBase.getDescription(), tonkotsuBase.cost()));
 
         tonkotsuBase = new Chahsyu(tonkotsuBase);
         System.out.print(
-                String.format("%s %d円\n", tonkotsuBase.getDescription(), tonkotsuBase.cost()));
+                String.format("ラーメン %s %d円\n", tonkotsuBase.getDescription(), tonkotsuBase.cost()));
 
-        misoBase = new Agitama(misoBase);
-        System.out.print(String.format("%s %d円\n", misoBase.getDescription(), misoBase.cost()));
+        misoBase = new Aghitama(misoBase);
+        System.out.print(String.format("ラーメン %s %d円\n", misoBase.getDescription(), misoBase.cost()));
 
         misoBase = new Nori(misoBase);
-        System.out.print(String.format("%s %d円\n", misoBase.getDescription(), misoBase.cost()));
+        System.out.print(String.format("ラーメン %s %d円\n", misoBase.getDescription(), misoBase.cost()));
 
         misoBase = new Chahsyu(misoBase);
-        System.out.print(String.format("%s %d円\n", misoBase.getDescription(), misoBase.cost()));
+        System.out.print(String.format("ラーメン %s %d円\n", misoBase.getDescription(), misoBase.cost()));
     }
 }
